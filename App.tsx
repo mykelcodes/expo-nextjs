@@ -9,12 +9,12 @@ import HomeIndex from './pages'
 
 export default function NativeRoute() {
     return (
-        // <AppQueryProvider>
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={HomeIndex} />
-            </Stack.Navigator>
-        </NavigationContainer>
-        // </AppQueryProvider>
+        <AppQueryProvider>
+            <NavigationContainer>
+                <Stack.Navigator>
+                    <Stack.Screen name="Home" component={HomeIndex} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </AppQueryProvider>
     )
 }
